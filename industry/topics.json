@@ -1,0 +1,1031 @@
+{
+  "exportedAt": "2026-10-04",
+  "groups": [
+    {
+      "key": "company",
+      "name": "公司与机构",
+      "blurb": "按企业、监管、央行、部门与交易所追踪原始资料"
+    },
+    {
+      "key": "field",
+      "name": "金融与产业主题",
+      "blurb": "按产业链、金融议题与政策领域组织信息"
+    },
+    {
+      "key": "genre",
+      "name": "资料类型与执行阶段",
+      "blurb": "区分披露、研究、计划和实际执行证据"
+    }
+  ],
+  "topics": [
+    {
+      "slug": "pbc",
+      "name": "中国人民银行",
+      "group": "company",
+      "entityId": "pbc",
+      "tags": [
+        "中国人民银行",
+        "entity:pbc"
+      ],
+      "definition": "中国人民银行的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "csrc",
+      "name": "中国证监会",
+      "group": "company",
+      "entityId": "csrc",
+      "tags": [
+        "中国证监会",
+        "entity:csrc"
+      ],
+      "definition": "中国证监会的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "nfra",
+      "name": "金融监管总局",
+      "group": "company",
+      "entityId": "nfra",
+      "tags": [
+        "金融监管总局",
+        "entity:nfra"
+      ],
+      "definition": "金融监管总局的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "safe",
+      "name": "国家外汇管理局",
+      "group": "company",
+      "entityId": "safe",
+      "tags": [
+        "国家外汇管理局",
+        "entity:safe"
+      ],
+      "definition": "国家外汇管理局的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "stats",
+      "name": "国家统计局",
+      "group": "company",
+      "entityId": "stats",
+      "tags": [
+        "国家统计局",
+        "entity:stats"
+      ],
+      "definition": "国家统计局的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "sse",
+      "name": "上交所",
+      "group": "company",
+      "entityId": "sse",
+      "tags": [
+        "上交所",
+        "entity:sse"
+      ],
+      "definition": "上交所的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "szse",
+      "name": "深交所",
+      "group": "company",
+      "entityId": "szse",
+      "tags": [
+        "深交所",
+        "entity:szse"
+      ],
+      "definition": "深交所的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "hkex",
+      "name": "港交所",
+      "group": "company",
+      "entityId": "hkex",
+      "tags": [
+        "港交所",
+        "entity:hkex"
+      ],
+      "definition": "港交所的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "hkma",
+      "name": "香港金管局",
+      "group": "company",
+      "entityId": "hkma",
+      "tags": [
+        "香港金管局",
+        "entity:hkma"
+      ],
+      "definition": "香港金管局的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "fed",
+      "name": "美联储",
+      "group": "company",
+      "entityId": "fed",
+      "tags": [
+        "美联储",
+        "entity:fed"
+      ],
+      "definition": "美联储的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "ecb",
+      "name": "欧洲央行",
+      "group": "company",
+      "entityId": "ecb",
+      "tags": [
+        "欧洲央行",
+        "entity:ecb"
+      ],
+      "definition": "欧洲央行的官方披露、数据与相关金融事件。",
+      "related": []
+    },
+    {
+      "slug": "supply-chain",
+      "name": "产业链",
+      "group": "field",
+      "tags": [
+        "产业链",
+        "供需/库存"
+      ],
+      "definition": "围绕产品或服务追踪需求、供给、价格、库存、产能与订单履约；主题可关联多个主栏目，计划与已实现分别标注。",
+      "related": []
+    },
+    {
+      "slug": "policy",
+      "name": "政策",
+      "group": "field",
+      "tags": [
+        "政策/监管"
+      ],
+      "definition": "追踪政策的有据变化，保留原文与统计口径。",
+      "related": []
+    },
+    {
+      "slug": "capital-flow",
+      "name": "资金流",
+      "group": "field",
+      "tags": [
+        "资金流"
+      ],
+      "definition": "追踪资金流的有据变化，保留原文与统计口径。",
+      "related": []
+    },
+    {
+      "slug": "liquidity",
+      "name": "信贷与流动性",
+      "group": "field",
+      "tags": [
+        "信贷/社融",
+        "流动性"
+      ],
+      "definition": "追踪信贷与流动性的有据变化，保留原文与统计口径。",
+      "related": []
+    },
+    {
+      "slug": "energy",
+      "name": "能源与有色",
+      "group": "field",
+      "tags": [
+        "能源",
+        "有色金属"
+      ],
+      "definition": "追踪能源开采、加工、金属材料与下游应用的供需、价格、库存和产能；保留产品规格、地区和统计口径。",
+      "related": []
+    },
+    {
+      "slug": "chain-auto-battery",
+      "name": "汽车与动力电池",
+      "group": "field",
+      "tags": [
+        "汽车与动力电池",
+        "汽车",
+        "动力电池"
+      ],
+      "definition": "追踪原料与材料、电池制造、整车产销和交付；区分产量、批发、零售、装车与收入。",
+      "related": [
+        "supply-chain",
+        "disclosures"
+      ]
+    },
+    {
+      "slug": "chain-semiconductor",
+      "name": "半导体",
+      "group": "field",
+      "tags": [
+        "半导体"
+      ],
+      "definition": "追踪材料、设备、设计、制造、封装与下游需求；区分产量、销售额、产能和预测。",
+      "related": [
+        "supply-chain",
+        "disclosures"
+      ]
+    },
+    {
+      "slug": "chain-solar-power",
+      "name": "光伏与电力",
+      "group": "field",
+      "tags": [
+        "光伏与电力",
+        "光伏",
+        "电力"
+      ],
+      "definition": "追踪硅料、硅片、电池片、组件与电力项目；区分制造产量、设计产能、装机、投运和发电。",
+      "related": [
+        "supply-chain",
+        "disclosures"
+      ]
+    },
+    {
+      "slug": "chain-consumption-property",
+      "name": "消费与地产",
+      "group": "field",
+      "tags": [
+        "消费与地产",
+        "消费",
+        "房地产"
+      ],
+      "definition": "追踪终端消费、地产建设及材料需求；区分销售、开工、竣工、待售库存和回款。",
+      "related": [
+        "supply-chain",
+        "disclosures"
+      ]
+    },
+    {
+      "slug": "disclosures",
+      "name": "公告与财报",
+      "group": "genre",
+      "tags": [
+        "公告/财报"
+      ],
+      "definition": "公司综合财报、治理与重大交易披露；具体产销和商业订单按经营主线归产业链，再通过主题关联。",
+      "related": []
+    },
+    {
+      "slug": "research",
+      "name": "研究与数据",
+      "group": "genre",
+      "tags": [
+        "研究/数据"
+      ],
+      "definition": "按研究与数据浏览金融信息。",
+      "related": []
+    },
+    {
+      "slug": "papers",
+      "name": "论文",
+      "group": "genre",
+      "tags": [
+        "论文"
+      ],
+      "definition": "正式学术期刊论文、工作论文及作者、研究问题、方法和结论明确的机构研究报告。模型估计与作者观点按原文保留；媒体转述、普通调查和数据表不因研究来源身份进入本主题。",
+      "related": [
+        "research"
+      ]
+    },
+    {
+      "slug": "analysis",
+      "name": "有据解读",
+      "group": "genre",
+      "tags": [
+        "分析/解读"
+      ],
+      "definition": "按有据解读浏览金融信息。",
+      "related": []
+    },
+    {
+      "slug": "methods",
+      "name": "方法与口径",
+      "group": "genre",
+      "tags": [
+        "方法/口径"
+      ],
+      "definition": "按方法与口径浏览金融信息。",
+      "related": []
+    },
+    {
+      "slug": "mof",
+      "name": "财政部",
+      "group": "company",
+      "entityId": "mof",
+      "tags": [
+        "财政部",
+        "entity:mof"
+      ],
+      "definition": "追踪财政部实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "ndrc",
+      "name": "国家发展改革委",
+      "group": "company",
+      "entityId": "ndrc",
+      "tags": [
+        "国家发展改革委",
+        "entity:ndrc"
+      ],
+      "definition": "追踪国家发展改革委实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "miit",
+      "name": "工业和信息化部",
+      "group": "company",
+      "entityId": "miit",
+      "tags": [
+        "工业和信息化部",
+        "entity:miit"
+      ],
+      "definition": "追踪工业和信息化部实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "mofcom",
+      "name": "商务部",
+      "group": "company",
+      "entityId": "mofcom",
+      "tags": [
+        "商务部",
+        "entity:mofcom"
+      ],
+      "definition": "追踪商务部实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "sat",
+      "name": "国家税务总局",
+      "group": "company",
+      "entityId": "sat",
+      "tags": [
+        "国家税务总局",
+        "entity:sat"
+      ],
+      "definition": "追踪国家税务总局实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "samr",
+      "name": "市场监管总局",
+      "group": "company",
+      "entityId": "samr",
+      "tags": [
+        "市场监管总局",
+        "entity:samr"
+      ],
+      "definition": "追踪市场监管总局实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "mee",
+      "name": "生态环境部",
+      "group": "company",
+      "entityId": "mee",
+      "tags": [
+        "生态环境部",
+        "entity:mee"
+      ],
+      "definition": "追踪生态环境部实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "audit",
+      "name": "审计署",
+      "group": "company",
+      "entityId": "audit",
+      "tags": [
+        "审计署",
+        "entity:audit"
+      ],
+      "definition": "追踪审计署实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "court",
+      "name": "最高人民法院",
+      "group": "company",
+      "entityId": "court",
+      "tags": [
+        "最高人民法院",
+        "entity:court"
+      ],
+      "definition": "追踪最高人民法院实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "ggzy",
+      "name": "全国公共资源交易平台",
+      "group": "company",
+      "entityId": "ggzy",
+      "tags": [
+        "全国公共资源交易平台",
+        "entity:ggzy"
+      ],
+      "definition": "追踪全国公共资源交易平台实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "szgxj",
+      "name": "深圳工信局",
+      "group": "company",
+      "entityId": "szgxj",
+      "tags": [
+        "深圳工信局",
+        "entity:szgxj"
+      ],
+      "definition": "追踪深圳工信局实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "szfb",
+      "name": "深圳财政局",
+      "group": "company",
+      "entityId": "szfb",
+      "tags": [
+        "深圳财政局",
+        "entity:szfb"
+      ],
+      "definition": "追踪深圳财政局实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "nafmii",
+      "name": "交易商协会",
+      "group": "company",
+      "entityId": "nafmii",
+      "tags": [
+        "交易商协会",
+        "entity:nafmii"
+      ],
+      "definition": "追踪交易商协会实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "amac",
+      "name": "基金业协会",
+      "group": "company",
+      "entityId": "amac",
+      "tags": [
+        "基金业协会",
+        "entity:amac"
+      ],
+      "definition": "追踪基金业协会实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "bis",
+      "name": "美国工业与安全局",
+      "group": "company",
+      "entityId": "bis",
+      "tags": [
+        "美国工业与安全局",
+        "entity:bis"
+      ],
+      "definition": "追踪美国工业与安全局实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "ofac",
+      "name": "美国财政部OFAC",
+      "group": "company",
+      "entityId": "ofac",
+      "tags": [
+        "美国财政部OFAC",
+        "entity:ofac"
+      ],
+      "definition": "追踪美国财政部OFAC实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "ustr",
+      "name": "美国贸易代表办公室",
+      "group": "company",
+      "entityId": "ustr",
+      "tags": [
+        "美国贸易代表办公室",
+        "entity:ustr"
+      ],
+      "definition": "追踪美国贸易代表办公室实际发布、执行或评估的政策与金融资料。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-macro",
+      "name": "综合宏观",
+      "group": "field",
+      "tags": [
+        "宏观政策"
+      ],
+      "definition": "综合经济政策、规划、政策协调与改革安排。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-monetary",
+      "name": "货币政策",
+      "group": "field",
+      "tags": [
+        "货币政策"
+      ],
+      "definition": "央行政策工具、利率、准备金与货币政策决策及执行。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-fiscal",
+      "name": "财政政策",
+      "group": "field",
+      "tags": [
+        "财政政策"
+      ],
+      "definition": "财政支出、政府债务、预算和财政资金安排。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-tax",
+      "name": "税收政策",
+      "group": "field",
+      "tags": [
+        "税收政策"
+      ],
+      "definition": "税种、征管、优惠、退税和适用范围的政策变更。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-regulation",
+      "name": "金融监管",
+      "group": "field",
+      "tags": [
+        "金融监管"
+      ],
+      "definition": "银行、证券、保险、基金和交易制度的监管及自律规则。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-industry",
+      "name": "产业政策",
+      "group": "field",
+      "tags": [
+        "产业政策"
+      ],
+      "definition": "产业规划、准入、扶持与公共投资执行。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-property",
+      "name": "房地产政策",
+      "group": "field",
+      "tags": [
+        "房地产政策"
+      ],
+      "definition": "房地产、土地、住房融资及保障性住房的政策。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-trade",
+      "name": "贸易政策",
+      "group": "field",
+      "tags": [
+        "贸易政策"
+      ],
+      "definition": "贸易、关税、出口管制、制裁与豁免。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-cross-border",
+      "name": "跨境政策",
+      "group": "field",
+      "tags": [
+        "跨境政策"
+      ],
+      "definition": "外汇、跨境投融资及资本账户制度。在政策动态中按主题筛选，主题页可切换全部与精选。",
+      "related": [
+        "policy",
+        "policy-documents",
+        "policy-execution"
+      ]
+    },
+    {
+      "slug": "policy-plans",
+      "name": "政策计划",
+      "group": "genre",
+      "tags": [
+        "政策计划"
+      ],
+      "definition": "政策规划与实施计划；不等于已经实施。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-consultations",
+      "name": "征求意见",
+      "group": "genre",
+      "tags": [
+        "征求意见",
+        "意见反馈"
+      ],
+      "definition": "草案、公众意见征集和意见反馈；不等于正式规则。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-documents",
+      "name": "正式文件",
+      "group": "genre",
+      "tags": [
+        "正式文件",
+        "配套细则"
+      ],
+      "definition": "正式发布的政策原文和配套实施细则；生效日期另按原文判断。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-execution",
+      "name": "政策执行",
+      "group": "genre",
+      "tags": [
+        "政策执行"
+      ],
+      "definition": "政策措施的具体执行证据；预算、审批、采购和支付分别判断。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-assessment",
+      "name": "政策评估",
+      "group": "genre",
+      "tags": [
+        "政策评估",
+        "审计整改"
+      ],
+      "definition": "政策结果、绩效与审计整改证据；不能将目标视作结果。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-projects",
+      "name": "项目审批",
+      "group": "genre",
+      "tags": [
+        "项目审批",
+        "环评受理",
+        "拟审批",
+        "审批决定"
+      ],
+      "definition": "项目受理、公示与审批；受理、拟批和批准分开标注。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-procurement",
+      "name": "采购合同",
+      "group": "genre",
+      "tags": [
+        "采购合同"
+      ],
+      "definition": "明确关联政策或公共投资的采购合同与执行证据。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-enforcement",
+      "name": "监管与司法",
+      "group": "genre",
+      "tags": [
+        "监管执法",
+        "司法适用",
+        "并购审查"
+      ],
+      "definition": "监管执法、金融司法适用及并购审查的具体制度与案件。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "policy-local",
+      "name": "地方政策",
+      "group": "genre",
+      "tags": [
+        "地方政策"
+      ],
+      "definition": "地方政策原文、财政资金和执行评估；目前地方来源以深圳为样板。",
+      "related": [
+        "policy"
+      ]
+    },
+    {
+      "slug": "chain-infrastructure",
+      "name": "基建与工程",
+      "group": "field",
+      "tags": [
+        "基建与工程"
+      ],
+      "definition": "追踪交通、建筑与工程的商业订单及履约；签约金额不等于已确认收入或回款，政策执行须有原文明确关联。",
+      "related": [
+        "supply-chain",
+        "policy-procurement"
+      ]
+    },
+    {
+      "slug": "fund-public",
+      "name": "公募基金",
+      "group": "field",
+      "tags": [
+        "公募基金"
+      ],
+      "definition": "追踪公募基金份额和期末净资产；净资产规模变化不等于资金净流入。",
+      "related": [
+        "capital-flow",
+        "methods"
+      ]
+    },
+    {
+      "slug": "fund-private",
+      "name": "私募基金",
+      "group": "field",
+      "tags": [
+        "私募基金"
+      ],
+      "definition": "追踪私募基金登记备案、存续数量和管理规模；新备案规模不等于全市场净申购。",
+      "related": [
+        "capital-flow",
+        "methods"
+      ]
+    },
+    {
+      "slug": "fund-private-asset-management",
+      "name": "私募资管",
+      "group": "field",
+      "tags": [
+        "私募资管"
+      ],
+      "definition": "追踪证券期货经营机构私募资管计划备案和存续规模；区分新设、余额及统计范围。",
+      "related": [
+        "capital-flow",
+        "methods"
+      ]
+    },
+    {
+      "slug": "cross-border-capital",
+      "name": "跨境资金",
+      "group": "field",
+      "tags": [
+        "跨境资本"
+      ],
+      "definition": "追踪结售汇、涉外收付款和国际收支；区分币种、毛额与差额、统计范围和证券投资资金流。",
+      "related": [
+        "capital-flow",
+        "policy-cross-border"
+      ]
+    },
+    {
+      "slug": "market-confidence",
+      "name": "市场信心",
+      "group": "field",
+      "tags": [
+        "市场信心"
+      ],
+      "definition": "追踪有样本和方法说明的信心调查及情绪指标；调查结果、估算与观点分开，不能当作资金流或未来回报。",
+      "related": [
+        "research",
+        "methods"
+      ]
+    },
+    {
+      "slug": "econ-macro",
+      "name": "宏观与货币",
+      "group": "field",
+      "tags": [
+        "宏观经济"
+      ],
+      "definition": "宏观波动、通胀、货币传导与经济预测的论文；区分模型估计、历史样本和政策决定。",
+      "related": [
+        "papers",
+        "research"
+      ]
+    },
+    {
+      "slug": "econ-growth",
+      "name": "增长与生产率",
+      "group": "field",
+      "tags": [
+        "经济增长"
+      ],
+      "definition": "经济增长、生产率、创新与结构转型的论文；计划投资与已实现产能分别判断。",
+      "related": [
+        "papers",
+        "research"
+      ]
+    },
+    {
+      "slug": "econ-labor",
+      "name": "就业与劳动",
+      "group": "field",
+      "tags": [
+        "就业与劳动"
+      ],
+      "definition": "就业、工资、劳动供给和工作方式的论文；说明样本、识别假设及适用范围。",
+      "related": [
+        "papers",
+        "research"
+      ]
+    },
+    {
+      "slug": "econ-trade",
+      "name": "国际贸易",
+      "group": "field",
+      "tags": [
+        "国际贸易"
+      ],
+      "definition": "贸易、汇率、跨国企业与全球价值链的论文；保留研究期间与跨国比较口径。",
+      "related": [
+        "papers",
+        "research"
+      ]
+    },
+    {
+      "slug": "econ-development",
+      "name": "发展经济学",
+      "group": "field",
+      "tags": [
+        "发展经济学"
+      ],
+      "definition": "发展、制度、资本配置、金融普惠与环境经济的论文；研究结果不等于当前政策或资金流。",
+      "related": [
+        "papers",
+        "research"
+      ]
+    },
+    {
+      "slug": "econ-econometrics",
+      "name": "计量方法",
+      "group": "field",
+      "tags": [
+        "计量方法"
+      ],
+      "definition": "因果识别、计量估计、预测和测量方法的论文；相关关系、反事实与预测分别说明。",
+      "related": [
+        "papers",
+        "research"
+      ]
+    },
+    {
+      "slug": "disclosure-reports",
+      "name": "公司财报",
+      "group": "field",
+      "tags": [
+        "财报"
+      ],
+      "definition": "公司整体财务报告：收入、利润、资产负债与现金流；完整财报与单项产销、融资公告分别归类。",
+      "related": [
+        "disclosures",
+        "research"
+      ]
+    },
+    {
+      "slug": "disclosure-macro",
+      "name": "宏观与物价",
+      "group": "field",
+      "tags": [
+        "宏观统计"
+      ],
+      "definition": "综合经济增长、GDP和居民消费物价统计；注明统计期、同比或环比、名义或实际及初值修订。",
+      "related": [
+        "disclosures",
+        "research"
+      ]
+    },
+    {
+      "slug": "disclosure-labor",
+      "name": "就业与人口",
+      "group": "field",
+      "tags": [
+        "就业与人口"
+      ],
+      "definition": "就业、失业、工资和人口结构原始统计；保留调查总体、年龄范围和统计期间。",
+      "related": [
+        "disclosures",
+        "research"
+      ]
+    },
+    {
+      "slug": "disclosure-households",
+      "name": "居民收支",
+      "group": "field",
+      "tags": [
+        "居民收支"
+      ],
+      "definition": "居民收入、消费支出和储蓄等综合住户统计；区分人均、总量、名义与实际，样本范围不同不直接比较。",
+      "related": [
+        "disclosures",
+        "research"
+      ]
+    },
+    {
+      "slug": "disclosure-financial",
+      "name": "金融机构经营",
+      "group": "field",
+      "tags": [
+        "金融机构经营"
+      ],
+      "definition": "银行保险业资产、负债、利润、资产质量和风险指标；期末余额与资金净流入分别判断。",
+      "related": [
+        "disclosures",
+        "research"
+      ]
+    },
+    {
+      "slug": "disclosure-social",
+      "name": "公共服务",
+      "group": "field",
+      "tags": [
+        "公共服务统计"
+      ],
+      "definition": "教育、养老、救助和社会服务的原始年度或季度统计；区分人数、机构数、服务覆盖及经济影响。",
+      "related": [
+        "disclosures",
+        "research"
+      ]
+    }
+  ]
+}

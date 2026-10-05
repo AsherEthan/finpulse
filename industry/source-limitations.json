@@ -1,0 +1,182 @@
+{
+  "verifiedAt": "2026-10-03",
+  "note": "这些入口尚未启用；替代窗口来源不代表完整覆盖。",
+  "sources": [
+    {
+      "id": "gov-policy-library",
+      "name": "国务院｜政策文件库",
+      "url": "https://www.gov.cn/zhengce/zhengceku/",
+      "reason": "原始curl响应HTTP403，不能把拒绝访问页当作政策列表启用。"
+    },
+    {
+      "id": "mof-notices-leaf",
+      "name": "财政部｜公告叶栏目",
+      "url": "https://www.mof.gov.cn/gkml/bulinggonggao/",
+      "reason": "HTTP200仅607字节，非可解析政策列表；已用gkml首页通知公告区替代。"
+    },
+    {
+      "id": "sta-policy-library",
+      "name": "国家税务总局｜税收政策文件",
+      "url": "https://www.chinatax.gov.cn/getFileListByCodeId",
+      "reason": "curl200，但项目FinPulseBot请求或详情读取失败：HTTP 403"
+    },
+    {
+      "id": "sta-policy-interpretations",
+      "name": "国家税务总局｜文字政策解读",
+      "url": "https://www.chinatax.gov.cn/search5/search/s?siteCode=bm29000002&searchWord=&type=1&xxgkResolveType=%E6%96%87%E5%AD%97&pageNum=0&pageSize=10&cwrqStart=&cwrqEnd=&column=%E6%94%BF%E7%AD%96%E8%A7%A3%E8%AF%BB&likeDoc=0&wordPlace=0&videoreSolveType=",
+      "reason": "curl200，但项目FinPulseBot请求或详情读取失败：HTTP 403"
+    },
+    {
+      "id": "sta-consultation-legacy-index",
+      "name": "国家税务总局｜旧意见征集栏目",
+      "url": "https://www.chinatax.gov.cn/chinatax/n810356/n810961/index.html",
+      "reason": "原始HTML列出的“当前征集”实际为2021年事项，时间为截止日，不当作最新政策；使用2026首页意见征集区替代。"
+    },
+    {
+      "id": "csrc-consultation-static-index",
+      "name": "中国证监会｜征求意见公开页",
+      "url": "https://www.csrc.gov.cn/csrc/c101981/zfxxgk_zdgk.shtml",
+      "reason": "200动态页面原始列表仅隐藏模板；官方首页实际有8条最新征求意见，使用首页定向区替代。"
+    },
+    {
+      "id": "ggzy-contracts",
+      "name": "全国公共资源交易平台 · 完整采购合同列表",
+      "url": "https://www.ggzy.gov.cn/deal/dealList.html?DEAL_CLASSIFY=02&DEAL_STAGE=0203",
+      "reason": "实际列表 HTML 为 Vue 模板、无记录；官网 JS 采用 POST /information/pubTradingInfo/getTradList，form-urlencoded，字段 DEAL_CLASSIFY=02、DEAL_STAGE=0203、PAGENUMBER=1。普通匿名实际 POST 返回 HTTP 404，未得到 records；官网还有 829 验证码分支。已接入首页有限最新交易/成交窗口，不能宣称完整合同接入。",
+      "request": {
+        "url": "https://www.ggzy.gov.cn/information/pubTradingInfo/getTradList",
+        "method": "POST",
+        "contentType": "application/x-www-form-urlencoded",
+        "body": "DEAL_CLASSIFY=02&DEAL_STAGE=0203&PAGENUMBER=1",
+        "expectedItemsPath": "data.records"
+      }
+    },
+    {
+      "id": "audit-reports",
+      "name": "审计署 · 审计工作及整改报告",
+      "url": "https://www.audit.gov.cn/n5/n26/index.html",
+      "reason": "原始 curl 及普通浏览器 UA/Referer 重试均 HTTP 502，未得到可解析列表；保留待接入，不能用入口当可采数据。"
+    },
+    {
+      "id": "ofac-rss",
+      "url": "https://ofac.treasury.gov/recent-actions.xml",
+      "reason": "curl HTTP 404；使用已验证 Recent Actions HTML 列表代替。"
+    },
+    {
+      "id": "ofac-rss-feed",
+      "url": "https://ofac.treasury.gov/recent-actions/feed",
+      "reason": "curl HTTP 404；使用已验证 Recent Actions HTML 列表代替。"
+    },
+    {
+      "id": "ecb-decisions-wrapper",
+      "url": "https://www.ecb.europa.eu/press/govcdec/mopo/html/index.en.html",
+      "reason": "原始 HTML 的列表为 lazyload 空容器；已改抓页面明示的 2026 官方片段，须在年初更新年度地址。"
+    },
+    {
+      "id": "ecb-accounts-wrapper",
+      "url": "https://www.ecb.europa.eu/press/accounts/html/index.en.html",
+      "reason": "原始 HTML 的列表为 lazyload 空容器；已改抓页面明示的 2026 官方片段，须在年初更新年度地址。"
+    },
+    {
+      "id": "sse-rules-old",
+      "url": "https://www.sse.com.cn/lawandrules/sselawsrules/latest/",
+      "reason": "旧栏目最新仅 2025-03-28；已使用 2025 版规则目录下的实时最新规则列表。"
+    },
+    {
+      "id": "nafmii-rules-wrapper",
+      "url": "https://www.nafmii.org.cn/zlgl/zlgz/",
+      "reason": "返回 JavaScript 跳转页而非新闻；改为已验证注册类/债券交易类子栏目。"
+    },
+    {
+      "id": "amac-rules-old",
+      "url": "https://www.amac.org.cn/governmentrules/czxgf/",
+      "reason": "curl HTTP 404；改用当前通知公告中规则/办法/指引与征求意见的精确筛选。"
+    },
+    {
+      "id": "npc-law-versions",
+      "name": "全国人大｜法律原文OFD与完整历史档案",
+      "url": "https://flk.npc.gov.cn/search",
+      "reason": "已从官网前端定位公开列表POST /law-search/search/list与详情GET /law-search/search/flfgDetails，并用普通curl核验公布日、施行日、有效状态、版本ID与历史沿革。项目自报FinPulseBot的HTTP请求实测403，因此npc-financial-laws仅保留暂停配置，未宣称自动接通。部分原文为OFD/DOCX、详情content为空，附件正文及版本差异仍需另核。"
+    },
+    {
+      "id": "nfra-legacy-license-penalty-parents",
+      "name": "金融监管总局｜旧行政许可与处罚父栏目",
+      "url": "https://www.nfra.gov.cn/cbircweb/DocInfo/SelectDocByItemIdAndChild?itemId=930&pageSize=18&pageIndex=1",
+      "reason": "旧父栏目930/931首屏返回2019年记录，不能冒充当前最新行政许可或处罚。已采用官网导航指明的总局机关4110/4113最新子栏目；不代表全部地方派出机构覆盖。"
+    },
+    {
+      "id": "mof-social-assistance-allocation-dates",
+      "name": "财政部｜困难群众救助资金分配日期冲突",
+      "url": "https://sbs.mof.gov.cn/zxzyzf/knqzjzzj/",
+      "reason": "栏目2026年资金分配通知的列表、PubDate与公开日期仍写2025-04-10，正文成文为2026-04-10且URL为202604。存在公开日期冲突，未当作最新政策源启用；原始分配和绩效目标XLS附件可供逐条核对。"
+    },
+    {
+      "id": "tsmc-monthly-revenue",
+      "name": "台积电 · 月营收",
+      "url": "https://investor.tsmc.com/chinese/monthly-revenue/2026",
+      "reason": "web工具读到2026年1-8月官方表格；原始curl该页403 Cloudflare challenge，pr.tsmc.com官方新闻列表亦403；不绕过挑战、不配置成已运行源。"
+    },
+    {
+      "id": "nio-monthly-delivery",
+      "name": "蔚来 · 月度交付",
+      "url": "https://ir.nio.com/",
+      "reason": "当前curl HTTP/2失败；HTTP/1.1及已配置系统代理HTTP/1.1首页均25秒超时、没有内容，不开启未核验列表。历史原始记录已研究，不等于本次动态列表接通。"
+    },
+    {
+      "id": "lixiang-monthly-delivery",
+      "name": "理想 · 月度交付",
+      "url": "https://ir.lixiang.com/",
+      "reason": "当前curl HTTP/2失败；HTTP/1.1及已配置系统代理HTTP/1.1首页均25秒超时、没有内容，不开启未核验列表。历史原始记录已研究，不等于本次动态列表接通。"
+    },
+    {
+      "id": "cninfo-contract-operations",
+      "name": "巨潮｜扬电科技经营与履约公告",
+      "url": "https://www.cninfo.com.cn/new/hisAnnouncement/query",
+      "reason": "配置曾通过官方接口试抓；后续实际采集和一次延后复查连续HTTP403，暂停自动请求。单篇PDF仍可核验，但不据此宣称连续订阅接通。"
+    },
+    {
+      "id": "shfe-warehouse-daily",
+      "name": "上期所 · 仓单日报",
+      "url": "https://www.shfe.com.cn/reports/tradedata/dailyandweeklydata/?query_params=dailystock",
+      "reason": "官网新HTML仓单表及官方最近交易日接口已读取成功，旧JSON地址返回404。当前表有35个分品种/仓库/厂库表且无逐期文章链接，仍需专用解析器处理单位、小计、明细与日期身份；本轮尚未接入，不能称为网络不可用。"
+    },
+    {
+      "id": "fed-h8-weekly-data",
+      "name": "美联储 · H.8 银行信贷与资产负债",
+      "url": "https://www.federalreserve.gov/releases/h8/",
+      "reason": "官方RSS当前提供基准口径与修订通知，并非逐周信贷和资产负债表的发布流水。尚需逐期报告或数值序列解析；未把RSS通知当作每周资金流订阅。"
+    },
+    {
+      "id": "stcn-flash-news",
+      "url": "https://www.stcn.com/article/list.html?type=kx",
+      "reason": "匿名 XHR 已验证 200、30 条，并有真实独立文章 URL；页脚明确未经书面授权禁止转载及各种形式的软件开发，未取得授权，故本轮不用作启用源。备份样本已经公开原文核验，可选自撰事实摘要需根节点判断。"
+    },
+    {
+      "id": "alternative-crypto-fng",
+      "url": "https://api.alternative.me/fng/?limit=8&format=json",
+      "reason": "公开 API 200、8 条真实 Bitcoin 加密市场恐惧贪婪日值，商业使用须清晰归属；仅 BTC 不能代指中国股市。现 JSON 通用配置不能从官方响应生成真实每日独立发布 URL，共用 URL 会合并身份。等待明确指标序列 adapter，不伪造日期 URL/碎片。"
+    },
+    {
+      "id": "pbc-quarterly-confidence-surveys",
+      "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/index.html",
+      "reason": "官方列表免费匿名 200；本次可见最新银行家/企业家/储户调查仍为 2025 年第四季度、发布 2026-01-23，未核验到 2026 年持续更新；保留缺口，不标作当前季度信号。"
+    },
+    {
+      "id": "cs-macro-news",
+      "url": "https://www.cs.com.cn/xwzx/hg/",
+      "reason": "普通匿名请求返回 403，本轮停止，不绕访问控制。"
+    },
+    {
+      "id": "fred-blog",
+      "name": "FRED Blog",
+      "url": "https://fredblog.stlouisfed.org/",
+      "reason": "条款区分个人非商业使用、第三方数据版权、抓取对服务影响及AI系统开发/训练限制。未确认本项目持续采集/公开加工用途覆盖，不启用。技术可读不等于授权。"
+    },
+    {
+      "id": "imf-china-working-papers",
+      "name": "IMF China Working Papers via eLibrary",
+      "url": "https://www.elibrary.imf.org/subject/CN",
+      "reason": "原站版权条款要求系统性复制/下载事先书面授权；有限合理使用说明不能扩大为持续自动抓研究全文。统计数据的单独开放条款不是工作论文内容许可。因此仅保存发现记录，不启用。"
+    }
+  ]
+}

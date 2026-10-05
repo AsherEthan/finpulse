@@ -1,0 +1,12 @@
+{
+  "name": "@aihot/industry",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./pages/*": "./pages/*",
+    "./brand/*": "./brand/*",
+    "./topics.json": "./topics.json",
+    "./source-limitations.json": "./source-limitations.json",
+    "./*": "./*.ts"
+  }
+}
